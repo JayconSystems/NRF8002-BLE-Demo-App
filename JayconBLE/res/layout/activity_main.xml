@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:layout_weight="0.75" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:gravity="center"
+        android:text="Press Button To Scan" />
+
+    <Button
+        android:id="@+id/bScan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="0.1"
+        android:gravity="center"
+        android:onClick="startBleScan"
+        android:text="Scan" />
+
+    <Button
+        android:id="@+id/bGetBatt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:gravity="center"
+        android:onClick="getBattery"
+        android:text="Battery" />
+
+    <Button
+        android:id="@+id/bSoundAlarm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:gravity="center"
+        android:onClick="soundAlarm"
+        android:text="Alarm" />
+
+    <Button
+        android:id="@+id/bStartServer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:gravity="center"
+        android:onClick="setupGattServer"
+        android:text="Start Server" />
+
+</LinearLayout>
